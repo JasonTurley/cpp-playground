@@ -33,3 +33,8 @@ Date::Date(int dd, Month mm, int yy) {
     m = mm;
     y = yy;
 }
+
+Date& Date::add_year(int n) {
+    this->y += n;
+    return *this;
+}

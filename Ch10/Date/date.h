@@ -10,8 +10,8 @@ public:
 
     class Bad_date { };     // exception class
 
-    Date(int dd = 0, Month mm = Month(0), int yy = 0);
-
+    Date(int dd = 0, Month mm = Month(0), int yy = 0);  // default constructor
+    
     // functions for examining the Date
     int day() const;
     Month month() const;
@@ -30,6 +30,7 @@ private:
     static Date default_date;
 };
 
+// Examination function definitions
 inline int Date::day() const{
     return d;
 }
@@ -41,4 +42,11 @@ inline Date::Month Date::month() const {
 inline int Date::year() const {
     return y;
 }
+
+// overloading
+inline bool operator==(Date a, Date b) {
+    return a.day() == b.day() && a.month() == b.month() && a.year() == b.year();
+}
+
+
 #endif

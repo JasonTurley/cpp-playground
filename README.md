@@ -1,3 +1,5 @@
-### cpp-rplayground
+### cpp-land
 
-Repo of C++ snippets and exercise problems found in TC++PL4.
+Throwing away code is a sin.
+
+This repo is home to C++ snippets, demos, and exercises solve from [TC++PL4](http://www.stroustrup.com/4th.html).
